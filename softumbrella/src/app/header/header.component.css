@@ -1,0 +1,41 @@
+header {
+  padding-left: 25%;
+  padding-right: 25%;
+  display: flex; /* allows auto-layout with align-items */
+  align-items: center; /* centers elements vertically */
+  justify-content: space-between;
+}
+
+.su-logo-name-container {
+  display: flex;
+  align-items: center;
+}
+
+.su-name {
+  text-decoration: none;
+
+  padding-left: 8px;
+  padding-top: 4px;
+
+  font-family: "Helvetica";
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.15px;
+}
+
+.menu-items-container {
+  padding-top: 8px;
+}
+
+.menu-item {
+  padding: 8px;
+
+  text-decoration: none;
+
+  font-family: "Helvetica";
+  font-size: 16px;
+  font-weight: 550;
+  color: #000000;
+  letter-spacing: 0.15px;
+}
