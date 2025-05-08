@@ -6,6 +6,16 @@ header {
   justify-content: space-between;
 }
 
+@media (max-width: 650px) {
+  header {
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex; /* allows auto-layout with align-items */
+    align-items: center; /* centers elements vertically */
+    justify-content: space-between;
+  }
+}
+
 .su-logo-name-container {
   display: flex;
   align-items: center;
@@ -91,6 +101,12 @@ header {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.2s ease;
+}
+
+@media (max-width: 650px) {
+  .dropdown-menu {
+    margin-left: -120px;
+  }
 }
 
 .menu-item:hover .dropdown-menu {
