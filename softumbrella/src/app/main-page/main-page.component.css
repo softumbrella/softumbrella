@@ -1,0 +1,20 @@
+.main-container {
+  padding-right: 25%;
+  padding-left: 25%;
+  padding-top: 2%;
+}
+
+.main-text-title {
+  font-family: 'Figtree-Local';
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.15px;
+}
+
+.main-text {
+  font-family: 'Figtree-Local';
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.15px;
+}
