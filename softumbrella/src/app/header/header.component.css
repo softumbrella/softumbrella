@@ -16,6 +16,11 @@ header {
   }
 }
 
+.su-logo {
+  width: 64px; /* or a fixed value */
+  height: auto;
+}
+
 .su-logo-name-container {
   display: flex;
   align-items: center;
