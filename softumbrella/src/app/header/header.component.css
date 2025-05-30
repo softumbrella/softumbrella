@@ -17,7 +17,7 @@ header {
 }
 
 .su-logo {
-  width: 64px; /* or a fixed value */
+  width: 52px; /* or a fixed value */
   height: auto;
 }
 
@@ -30,13 +30,13 @@ header {
   text-decoration: none;
 
   padding-left: 8px;
-  padding-top: 4px;
+  padding-top: 12px;
 
-  font-family: 'Figtree-Local';
-  font-size: 24px;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 40px;
   font-weight: 400;
   color: #000000;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.2px;
 }
 
 .menu-items-container {
@@ -54,7 +54,7 @@ header {
 .menu-item-link{
   text-decoration: none;
 
-  font-family: 'Figtree-Local';
+  font-family: 'Dongle-Regular-Local';
   font-size: 16px;
   font-weight: 400;
   color: #000000;
@@ -73,7 +73,7 @@ header {
 
   padding-left: 12px;
 
-  font-family: 'Figtree-Local';
+  font-family: 'Dongle-Regular-Local';
   font-size: 16px;
   font-weight: 600;
   color: #000000;

@@ -1,7 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-  font-family: 'Figtree-Local';
-  src: url('./assets/fonts/Figtree/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Dongle-Regular-Local';
+  src: url('./assets/fonts/Dongle/Dongle-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dongle-Light-Local';
+  src: url('./assets/fonts/Dongle/Dongle-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dongle-Bold-Local';
+  src: url('./assets/fonts/Dongle/Dongle-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
