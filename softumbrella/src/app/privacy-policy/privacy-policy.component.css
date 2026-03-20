@@ -1,0 +1,94 @@
+.privacy-container {
+  padding-right: 25%;
+  padding-left: 25%;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 650px) {
+  .privacy-container {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+.privacy-back {
+  margin: 0 0 8px;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.privacy-back a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.privacy-back a:hover {
+  color: #00000083;
+}
+
+.privacy-title {
+  margin: 0 0 8px;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 60px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 0.85;
+}
+
+.privacy-updated {
+  margin: 0 0 32px;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 26px;
+  font-weight: 400;
+  color: #00000099;
+  letter-spacing: 0.2px;
+  line-height: 1;
+}
+
+.privacy-section {
+  margin-bottom: 28px;
+}
+
+.privacy-section h2 {
+  margin: 0 0 12px;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 0.95;
+}
+
+.privacy-section p,
+.privacy-section li {
+  margin: 0 0 12px;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 28px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 1.05;
+}
+
+.privacy-section ul {
+  margin: 0 0 12px;
+  padding-left: 1.25em;
+}
+
+.privacy-section li {
+  margin-bottom: 8px;
+}
+
+.privacy-section a {
+  color: #000000;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.privacy-section a:hover {
+  color: #00000083;
+}

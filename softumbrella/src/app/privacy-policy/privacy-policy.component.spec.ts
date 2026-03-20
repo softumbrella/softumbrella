@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideRouter } from '@angular/router';
 
-import { MainPageComponent } from './main-page.component';
+import { PrivacyPolicyComponent } from './privacy-policy.component';
 
-describe('MainPageComponent', () => {
-  let component: MainPageComponent;
-  let fixture: ComponentFixture<MainPageComponent>;
+describe('PrivacyPolicyComponent', () => {
+  let component: PrivacyPolicyComponent;
+  let fixture: ComponentFixture<PrivacyPolicyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainPageComponent],
+      imports: [PrivacyPolicyComponent],
       providers: [provideRouter([])],
-    })
-    .compileComponents();
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(MainPageComponent);
+    fixture = TestBed.createComponent(PrivacyPolicyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

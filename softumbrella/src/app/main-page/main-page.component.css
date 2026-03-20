@@ -29,3 +29,27 @@
   letter-spacing: 0.2px;
   line-height: 0.85;
 }
+
+.main-privacy-actions {
+  margin: 36px 0 0;
+}
+
+.main-privacy-button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 32px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 1;
+  padding: 10px 22px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.main-privacy-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
