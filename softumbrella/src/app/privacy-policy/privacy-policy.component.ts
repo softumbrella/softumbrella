@@ -20,7 +20,7 @@ export class PrivacyPolicyComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Privacy Policy for Soft Umbrella — how we collect, use, and protect your information.',
+        'Privacy Policy for Soft Umbrella — how we may collect, use, and share information in connection with our website, software, cloud services, and related offerings.',
     });
   }
 }
