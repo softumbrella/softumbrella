@@ -1,21 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+/* Latin subset WOFF (~21KB each); full TTFs were ~4.5MB each */
 @font-face {
   font-family: 'Dongle-Regular-Local';
-  src: url('./assets/fonts/Dongle/Dongle-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Dongle/Dongle-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-206F, U+20AC;
 }
 
 @font-face {
   font-family: 'Dongle-Light-Local';
-  src: url('./assets/fonts/Dongle/Dongle-Light.ttf') format('truetype');
+  src: url('/assets/fonts/Dongle/Dongle-Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-206F, U+20AC;
 }
 
 @font-face {
   font-family: 'Dongle-Bold-Local';
-  src: url('./assets/fonts/Dongle/Dongle-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/Dongle/Dongle-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F, U+1E00-1EFF, U+2000-206F, U+20AC;
 }

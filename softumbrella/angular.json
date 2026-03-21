@@ -27,7 +27,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "./src/styles.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -38,6 +38,13 @@
           },
           "configurations": {
             "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              },
               "budgets": [
                 {
                   "type": "initial",
@@ -90,7 +97,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "./src/styles.css"
             ],
             "scripts": []
           }
