@@ -1,4 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+.site-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+}
+
+body.scrolled-from-top .site-sticky-header {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
 /* Latin subset WOFF (~21KB each); full TTFs were ~4.5MB each */
 @font-face {
   font-family: 'Dongle-Regular-Local';
