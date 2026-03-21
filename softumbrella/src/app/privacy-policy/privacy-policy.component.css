@@ -20,9 +20,25 @@
 }
 
 .privacy-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  line-height: 1;
   color: #000000;
   text-decoration: none;
   transition: color 0.2s;
+}
+
+.privacy-back-label {
+  line-height: 1;
+}
+
+.privacy-back-icon {
+  flex-shrink: 0;
+  width: 0.65em;
+  height: 0.65em;
+  display: block;
+  transform: translateY(-0.1em);
 }
 
 .privacy-back a:hover {
