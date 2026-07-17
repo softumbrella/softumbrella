@@ -1,0 +1,27 @@
+<div class="site-sticky-header">
+  <app-header></app-header>
+</div>
+
+<main class="products-page">
+  <section class="products-intro" aria-labelledby="products-title">
+    <h1 id="products-title" class="products-kicker">Products</h1>
+  </section>
+
+  <section class="products-list" aria-label="Available products">
+    <article class="product-card">
+      <img src="/assets/jipconfig/icon-512.png" alt="" class="product-icon" />
+      <div class="product-copy">
+        <p class="product-platform">macOS</p>
+        <h2>JipConfig</h2>
+        <p>
+          A native Mac app for managing local development processes, environment profiles,
+          and system metrics.
+        </p>
+      </div>
+      <div class="product-actions">
+        <a routerLink="/products/jipconfig" class="product-button primary">View product</a>
+        <a [href]="jipConfigDownloadUrl" class="product-button secondary">Download DMG</a>
+      </div>
+    </article>
+  </section>
+</main>

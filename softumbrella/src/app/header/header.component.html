@@ -1,10 +1,18 @@
 <header>
   <div class="su-logo-name-container">
     <img class="su-logo" src="su-logo-64x64.png" srcset="su-logo-64x64.png 64w, su-logo-128x128.png 128w, su-logo-192x192.png 192w" alt="" />
-    <a class="su-name" href="/">Soft Umbrella</a>
+    <a class="su-name" routerLink="/">Soft Umbrella</a>
   </div>
-  
-  <!-- 
+
+  <nav class="menu-items-container" aria-label="Primary navigation">
+    <ul>
+      <li class="menu-item">
+        <a class="menu-item-link" routerLink="/products" routerLinkActive="active-link">Products</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--
   <nav class="menu-items-container">
     <li class="menu-item">
       <a class="menu-item-link" href="/">Products</a>

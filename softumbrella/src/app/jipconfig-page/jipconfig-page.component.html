@@ -1,0 +1,69 @@
+<div class="site-sticky-header">
+  <app-header></app-header>
+</div>
+
+<main class="jipconfig-page">
+  <section class="jipconfig-hero" aria-labelledby="jipconfig-title">
+    <img
+      class="jipconfig-hero-image"
+      src="/assets/jipconfig/services-master-detail-light.png"
+      alt="JipConfig process control screen showing local processes and runtime details"
+    />
+    <div class="jipconfig-hero-veil" aria-hidden="true"></div>
+    <div class="jipconfig-hero-content">
+      <img class="jipconfig-icon" src="/assets/jipconfig/icon-512.png" alt="" />
+      <p class="jipconfig-kicker">Native macOS app</p>
+      <h1 id="jipconfig-title">JipConfig</h1>
+      <p class="jipconfig-hero-text">
+        Manage local development processes, environment profiles, and host metrics
+        from one focused Mac workspace.
+      </p>
+      <div class="jipconfig-actions">
+        <a class="download-button" [href]="downloadUrl">Download for macOS</a>
+        <a class="secondary-button" routerLink="/products">All products</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="jipconfig-summary" aria-label="JipConfig highlights">
+    <article>
+      <span class="summary-dot blue"></span>
+      <h2>Control processes</h2>
+      <p>Start, stop, restart, force kill, relaunch, filter, search, and inspect live output.</p>
+    </article>
+    <article>
+      <span class="summary-dot green"></span>
+      <h2>Switch environments</h2>
+      <p>Attach profiles to processes and keep secret values in Keychain instead of JSON files.</p>
+    </article>
+    <article>
+      <span class="summary-dot orange"></span>
+      <h2>Monitor activity</h2>
+      <p>Watch host metrics and inspect live output while commands run.</p>
+    </article>
+  </section>
+
+  <section class="jipconfig-showcase">
+    <div class="showcase-copy">
+      <p class="section-kicker">Local workflows</p>
+      <h2>Built for the apps and scripts already on your Mac.</h2>
+      <p>
+        JipConfig runs shell commands, tracks resource usage, and stores app data locally
+        so developer workflows stay easy to monitor and restart.
+      </p>
+    </div>
+    <div class="showcase-grid" aria-label="JipConfig screens">
+      <img src="/assets/jipconfig/dashboard-light.png" alt="JipConfig dashboard with system and process summaries" />
+      <img src="/assets/jipconfig/profile-editor-light.png" alt="JipConfig environment profile editor with a hidden secret value" />
+    </div>
+  </section>
+
+  <section class="jipconfig-download" aria-labelledby="download-title">
+    <div>
+      <p class="section-kicker">Version 1.0.0</p>
+      <h2 id="download-title">Download JipConfig for macOS.</h2>
+      <p>Requires macOS 26 or later.</p>
+    </div>
+    <a class="download-button" [href]="downloadUrl">Download DMG</a>
+  </section>
+</main>
