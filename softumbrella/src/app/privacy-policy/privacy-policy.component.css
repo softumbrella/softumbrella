@@ -79,6 +79,43 @@
   line-height: 1;
 }
 
+.privacy-toc {
+  margin-bottom: 32px;
+}
+
+.privacy-toc h2 {
+  margin: 0 0 12px;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 34px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 0.95;
+}
+
+.privacy-toc ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 20px;
+  margin: 0;
+  padding-left: 1.25em;
+}
+
+.privacy-toc li,
+.privacy-toc a {
+  font-family: 'Dongle-Regular-Local';
+  font-size: 27px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 1;
+}
+
+.privacy-toc a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .privacy-section {
   margin-bottom: 28px;
 }
@@ -87,6 +124,16 @@
   margin: 0 0 12px;
   font-family: 'Dongle-Regular-Local';
   font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 0.95;
+}
+
+.privacy-section h3 {
+  margin: 0 0 12px;
+  font-family: 'Dongle-Regular-Local';
+  font-size: 34px;
   font-weight: 400;
   color: #000000;
   letter-spacing: 0.2px;
@@ -121,4 +168,16 @@
 
 .privacy-section a:hover {
   color: #00000083;
+}
+
+.privacy-section code,
+.privacy-toc code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.72em;
+}
+
+@media (max-width: 650px) {
+  .privacy-toc ul {
+    grid-template-columns: 1fr;
+  }
 }

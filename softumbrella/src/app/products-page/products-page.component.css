@@ -104,6 +104,12 @@
   color: #111516;
 }
 
+.product-button.tertiary {
+  color: #111516;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .product-button:hover {
   transform: translateY(-1px);
 }
