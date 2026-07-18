@@ -201,6 +201,10 @@
   color: #ffffff;
 }
 
+.jipconfig-download-actions {
+  margin-top: 0;
+}
+
 .jipconfig-download .download-button {
   flex: 0 0 auto;
   background: #ffffff;
