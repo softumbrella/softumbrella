@@ -74,9 +74,11 @@
 
 .product-actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   grid-column: 2;
+  min-width: 0;
 }
 
 .product-button {
@@ -84,6 +86,9 @@
   min-height: 42px;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
   padding: 0 16px;
   border-radius: 10px;
   font-size: 27px;
@@ -91,7 +96,8 @@
   letter-spacing: 0.2px;
   line-height: 1;
   text-decoration: none;
-  white-space: nowrap;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .product-button.primary {
@@ -162,5 +168,9 @@
     grid-column: 1 / -1;
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .product-button {
+    width: 100%;
   }
 }
