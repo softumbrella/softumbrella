@@ -10,7 +10,7 @@ import { HeaderComponent } from '../header/header.component';
   styleUrl: './products-page.component.css',
 })
 export class ProductsPageComponent implements OnInit {
-  readonly jipConfigDownloadUrl = 'https://downloads.jipconfig.com/releases/JipConfig_1.0.0.dmg';
+  readonly jipConfigDownloadUrl = 'https://downloads.jipconfig.com/releases/JipConfig-1.0.2.dmg';
 
   constructor(
     private readonly title: Title,
