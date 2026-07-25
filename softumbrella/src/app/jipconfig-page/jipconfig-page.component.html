@@ -15,8 +15,8 @@
       <p class="jipconfig-kicker">Native macOS app</p>
       <h1 id="jipconfig-title">JipConfig</h1>
       <p class="jipconfig-hero-text">
-        Manage local development processes, environment profiles, and host metrics
-        from one focused Mac workspace.
+        Run and monitor local development services, switch protected environment
+        profiles, and review selected command risks before launch.
       </p>
       <div class="jipconfig-actions">
         <a class="download-button" [href]="downloadUrl">Download for macOS</a>
@@ -33,13 +33,13 @@
     </article>
     <article>
       <span class="summary-dot green"></span>
-      <h2>Switch environments</h2>
-      <p>Attach profiles to processes and keep secret values in Keychain instead of JSON files.</p>
+      <h2>Protect environments</h2>
+      <p>Encrypt selected profile variables at rest and unlock them with Touch ID or your Mac password.</p>
     </article>
     <article>
       <span class="summary-dot orange"></span>
-      <h2>Monitor activity</h2>
-      <p>Watch host metrics and inspect live output while commands run.</p>
+      <h2>Review before launch</h2>
+      <p>Check commands locally for selected risky patterns before each start or restart.</p>
     </article>
   </section>
 
@@ -48,8 +48,8 @@
       <p class="section-kicker">Local workflows</p>
       <h2>Built for the apps and scripts already on your Mac.</h2>
       <p>
-        JipConfig runs shell commands, tracks resource usage, and stores app data locally
-        so developer workflows stay easy to monitor and restart.
+        JipConfig runs shell commands, tracks resource usage and output, and stores its
+        configuration locally so developer workflows stay easy to monitor and restart.
       </p>
     </div>
     <div class="showcase-grid" aria-label="JipConfig screens">
@@ -58,9 +58,44 @@
     </div>
   </section>
 
+  <section class="jipconfig-showcase jipconfig-command-review" aria-labelledby="command-review-title">
+    <div class="showcase-copy command-review-copy">
+      <p class="section-kicker">Pre-run command checks</p>
+      <h2 id="command-review-title">See selected risks before a service runs.</h2>
+      <p>
+        Before every start or restart, JipConfig checks the command locally for selected
+        patterns associated with elevated access, remote code execution, sensitive-file
+        access, persistence changes, and destructive operations.
+      </p>
+      <p class="command-review-limit">
+        <strong>Know the limit:</strong> these checks are pattern-based and may not identify
+        every unsafe command. Warnings require your review, while a limited set of critical
+        destructive patterns is blocked.
+      </p>
+    </div>
+    <div class="showcase-grid command-review-grid" aria-label="JipConfig command-check screens">
+      <div>
+        <img
+          src="/assets/jipconfig/command-threat-review-light.png"
+          alt="JipConfig warning showing high and medium command findings before launch"
+          loading="lazy"
+        />
+        <p>Review matched patterns and severity before deciding whether to run a command.</p>
+      </div>
+      <div>
+        <img
+          src="/assets/jipconfig/command-threat-blocked-light.png"
+          alt="JipConfig blocking a command matched as destructive root deletion"
+          loading="lazy"
+        />
+        <p>Selected critical destructive patterns are blocked before launch.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="jipconfig-download" aria-labelledby="download-title">
     <div>
-      <p class="section-kicker">Version 1.0.2</p>
+      <p class="section-kicker">Version 2.0</p>
       <h2 id="download-title">Download JipConfig for macOS.</h2>
       <p>Requires macOS 26 or later.</p>
     </div>

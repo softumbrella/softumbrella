@@ -25,7 +25,7 @@
 
 <div class="privacy-container">
   <h1 class="privacy-title">Privacy Policy</h1>
-  <p class="privacy-updated">Last updated: July 18, 2026</p>
+  <p class="privacy-updated">Last updated: July 25, 2026</p>
 
   <nav class="privacy-toc" aria-label="Privacy policy sections">
     <h2>Contents</h2>
@@ -35,6 +35,7 @@
       <li><a href="/privacy#our-role">Our role</a></li>
       <li><a href="/privacy#information-collected-or-processed">Information collected or processed through the Services</a></li>
       <li><a href="/privacy#local-processing">Local processing and device storage</a></li>
+      <li><a href="/privacy#software-operation">Software operation and user responsibility</a></li>
       <li><a href="/privacy#product-specific-practices">Product-specific privacy practices</a></li>
       <li><a href="/privacy#jipconfig-for-macos">JipConfig for macOS</a></li>
       <li><a href="/privacy#how-we-use-information">How we use information</a></li>
@@ -178,6 +179,32 @@
   </section>
 
   <section class="privacy-section">
+    <h2 id="software-operation">Software operation and user responsibility</h2>
+    <p>
+      Some Soft Umbrella applications allow you to configure or initiate commands, scripts,
+      integrations, or third-party software. User-directed operations may modify or delete data,
+      alter system settings, consume computing resources, disclose information to a destination
+      you select, or produce other intended or unintended effects. You are responsible for
+      reviewing your inputs and configurations, maintaining appropriate backups, and using
+      suitable account permissions and access controls.
+    </p>
+    <p>
+      Any warning, security check, validation, classification, or suggested action provided by a
+      Service is designed to assist you and is not a guarantee that the Service will identify or
+      prevent every unsafe, malicious, or unintended operation. The absence of a warning does not
+      mean that an operation is safe. Except where a Service expressly blocks an operation, you
+      decide whether to proceed.
+    </p>
+    <p>
+      To the extent permitted by applicable law, Soft Umbrella is not responsible for loss or
+      damage caused by commands, scripts, configurations, content, integrations, or third-party
+      software that you select, provide, connect, or run, and you assume the risks associated with
+      those user-directed operations. This notice does not limit rights or remedies that cannot be
+      limited under applicable law.
+    </p>
+  </section>
+
+  <section class="privacy-section">
     <h2 id="product-specific-practices">Product-specific privacy practices</h2>
     <h3 id="jipconfig-for-macos">JipConfig for macOS</h3>
     <p>
@@ -186,31 +213,51 @@
       features locally on your Mac. The current implementation of JipConfig does not include account
       sign-in, analytics, automatic crash reporting, license validation, cloud sync, or automatic update
       checks, and the JipConfig app itself does not send your launch profiles, shell commands,
-      environment-variable values, file paths, process output, or run history to Soft Umbrella or a third
-      party.
+      environment-variable values, file paths, process output, run history, or command-check findings to
+      Soft Umbrella or a third party.
     </p>
     <p>
       JipConfig can launch commands, scripts, applications, and tools that you configure. Those commands
       run outside Soft Umbrella's control and may access files, use environment variables, write logs, or
-      contact external services according to their own behavior. You are responsible for reviewing
-      commands and scripts before running them.
+      contact external services according to their own behavior.
+    </p>
+    <p>
+      Before every service start or restart, JipConfig analyzes the configured command locally for selected
+      patterns that may indicate a security risk. It does not execute the command as part of the scan or
+      send the command or findings over a network. JipConfig may display warnings that require your review
+      and blocks a limited set of critical destructive patterns. This pattern-based feature is not
+      antivirus, malware analysis, an endpoint-security product, or a security sandbox; it may not detect
+      every unsafe command, obfuscated operation, or harmful result. A command receiving no warning is not
+      a representation that the command is safe.
     </p>
     <p>
       JipConfig stores app configuration locally on your Mac. This may include service names, shell
-      commands, launch options, profile names, environment-variable names, non-secret environment-variable
-      values, selected file paths, app settings, and run-history information such as process identifiers,
-      timestamps, exit codes, peak CPU and memory usage, and captured <code>stdout</code> and
-      <code>stderr</code>. These files are stored as locally readable JSON files within JipConfig's
-      Application Support directory for your macOS user account and are not encrypted by JipConfig. Local
-      run output can contain sensitive information if a process prints it.
+      commands, launch options, profile names, environment-variable names and values, selected file paths,
+      app settings, and run-history information such as process identifiers, timestamps, exit codes, peak
+      CPU and memory usage, captured <code>stdout</code> and <code>stderr</code>, and command-check
+      outcomes and finding labels. Unless protected as described below, this information is stored in
+      locally readable JSON files within JipConfig's Application Support directory for your macOS user
+      account. Service commands, process output, run history, and general app settings are not encrypted by
+      JipConfig. Local run output can contain sensitive information if a process prints it.
     </p>
     <p>
-      When you mark an environment-variable value as a secret, JipConfig stores that value in the macOS
-      Keychain rather than in its profile JSON files. Secret values are loaded locally when needed and
-      passed to the service process you choose to launch. For Terminal launches, JipConfig may temporarily
-      create a locally stored launcher script in a restricted temporary directory that contains
-      environment exports, including secret values, and attempts to delete that script before your
-      command runs.
+      When you enable protection for an environment profile, JipConfig encrypts that profile's variable
+      payload at rest using AES-GCM. The encryption key is stored in the macOS Keychain. Protected-profile
+      encryption does not encrypt service commands, process output, run history, profile metadata, or
+      other app data. When you separately mark an environment-variable value as secret, JipConfig stores
+      that value in the macOS Keychain rather than in its profile JSON data.
+    </p>
+    <p>
+      JipConfig requires Touch ID or your Mac password before protected profile variables can be viewed,
+      edited, or used to launch a service. Authentication is performed locally by macOS. JipConfig does
+      not receive your Touch ID biometric data or Mac account password. Protected profiles can be locked
+      manually and are also designed to lock after inactivity or when the Mac sleeps.
+    </p>
+    <p>
+      Secret and protected-profile values are loaded locally when needed and passed to the service process
+      you choose to launch. For Terminal launches, JipConfig may temporarily create a locally stored
+      launcher script in a restricted temporary directory that contains environment exports, including
+      secret values, and attempts to delete that script before your command runs.
     </p>
     <p>
       JipConfig does not currently scan, import, or transmit <code>.env</code> file contents. If a future
@@ -232,9 +279,10 @@
     <p>
       You can delete services, environment profiles, and run history inside JipConfig. JipConfig is
       designed to delete Keychain secrets associated with an environment profile when you delete that
-      profile. Removing the app from your Mac may not automatically remove local Application Support
-      files, Keychain items, pasteboard contents, macOS logs, backups, or saved application state. For
-      instructions on locating and removing JipConfig's local files and Keychain items, contact us.
+      profile. The shared protected-profile encryption key may remain in Keychain until it is separately
+      removed. Removing the app from your Mac may not automatically remove local Application Support files,
+      Keychain items, pasteboard contents, macOS logs, backups, or saved application state. For instructions
+      on locating and removing JipConfig's local files and Keychain items, contact us.
     </p>
     <p>
       When you download JipConfig or visit our website or support pages, Soft Umbrella and its hosting or

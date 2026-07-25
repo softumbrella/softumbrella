@@ -10,7 +10,7 @@ import { HeaderComponent } from '../header/header.component';
   styleUrl: './products-page.component.css',
 })
 export class ProductsPageComponent implements OnInit {
-  readonly jipConfigDownloadUrl = 'https://downloads.jipconfig.com/releases/JipConfig-1.0.2.dmg';
+  readonly jipConfigDownloadUrl = 'https://downloads.jipconfig.com/releases/JipConfig-2.0.0.dmg';
 
   constructor(
     private readonly title: Title,
@@ -21,7 +21,8 @@ export class ProductsPageComponent implements OnInit {
     this.title.setTitle('Products | Soft Umbrella');
     this.meta.updateTag({
       name: 'description',
-      content: 'Products from Soft Umbrella, including JipConfig for managing local development processes on macOS.',
+      content:
+        'Products from Soft Umbrella, including JipConfig for local development services, protected environment profiles, and pre-run command checks on macOS.',
     });
   }
 }

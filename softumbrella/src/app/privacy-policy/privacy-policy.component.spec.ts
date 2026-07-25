@@ -21,4 +21,13 @@ describe('PrivacyPolicyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('discloses protected profiles, command-check limits, and user-directed risk', () => {
+    const text = (fixture.nativeElement as HTMLElement).textContent ?? '';
+
+    expect(text).toContain('Last updated: July 25, 2026');
+    expect(text).toContain('encrypts that profile\'s variable payload at rest using AES-GCM');
+    expect(text).toContain('may not detect every unsafe command');
+    expect(text).toContain('Soft Umbrella is not responsible for loss or damage caused by commands');
+  });
 });
