@@ -34,7 +34,7 @@ describe('JipconfigPageComponent', () => {
 
   it('links to the version 2.0 download', () => {
     expect(component.downloadUrl).toBe(
-      'https://downloads.jipconfig.com/releases/JipConfig-2.0.0.dmg',
+      'https://downloads.jipconfig.com/releases/JipConfig-2.0.dmg',
     );
   });
 });
